@@ -1,3 +1,3 @@
 # Javascript Challenges
 
-Solve Using Vanilla javascript for reinforcing learning 😀
+Solved Using Vanilla javascript for reinforcing learning 😀
