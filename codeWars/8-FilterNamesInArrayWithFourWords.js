@@ -14,7 +14,11 @@ friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 
  */
 
-const friend = friends => friends.filter(name => name.length === 4);
+function friend(friends) {
+  return friends.filter(function (name) {
+    return name.length === 4;
+  });
+}
 
 console.log(friend(['Ryan', 'Kieran', 'Jason', 'Yous']));
 console.log(friend(['Ryan', 'Kieran', 'Mark']));
