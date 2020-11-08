@@ -12,6 +12,33 @@ GetSum(1, 1) == 1   // 1 Since both are same
 GetSum(-1, 0) == -1 // -1 + 0 = -1
 GetSum(-1, 2) == 2  // -1 + 0 + 1 + 2 = 2
 
+Another Soln
+-----------------------------------
+function GetSum( a,b ) {
+   var result = 0;
+   var bigger = a > b ? a : b;
+   var smaller = a > b ? b : a;
+   for (var i = smaller; i <= bigger; i++) { result += i }
+   return result
+}
+
+Another Soln
+-----------------------------------
+function GetSum(a,b)
+{
+  return (Math.abs(a - b) + 1) * (a+b) / 2;
+}
+
+Another Soln
+-----------------------------------
+const GetSum = (a, b) => {
+  let min = Math.min(a, b),
+      max = Math.max(a, b);
+  return (max - min + 1) * (min + max) / 2;
+  
+}
+
+
 */
 
 function getSum(a, b) {
